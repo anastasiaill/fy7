@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>итог</title>
+<link rel="stylesheet" href="s.css">
+</head>
+<body>
+    <div class="cat-container">
+        <img src="https://usagif.com/wp-content/uploads/gifs/dancing-cat-33.gif" alt="cat" class="cat">
+      </div>
+<button id="runawayButton">Нажми на меня!</button>
+
+<script>
+  const button = document.getElementById('runawayButton');
+  
+  button.addEventListener('mouseover', () => {
+    const x = Math.random() * window.innerWidth;
+    const y = Math.random() * window.innerHeight;
+    
+    button.style.left = x + 'px';
+    button.style.top = y + 'px';
+  });
+</script>
+</body>
+</html>
